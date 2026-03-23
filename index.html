@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+<img src="https://www.wonderskool.com//uploads/1643109084_ClientLogo.png" class="logo">
+<h2>Student Feedback Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+Student Name:<br>
+<input type="text" id="name"><br><br>
+
+Email ID:<br>
+<input type="text" id="email"><br><br>
+
+Mobile Number:<br>
+<input type="text" id="mobile"><br><br>
+
+Department:<br>
+<select id="department">
+<option value="">Select Department</option>
+<option>Computer Science</option>
+<option>IT</option>
+<option>Mechanical</option>
+<option>Electrical</option>
+</select>
+
+<br><br>
+
+Gender:<br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+
+<br><br>
+
+Feedback Comments:<br>
+<textarea id="feedback" rows="4"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
